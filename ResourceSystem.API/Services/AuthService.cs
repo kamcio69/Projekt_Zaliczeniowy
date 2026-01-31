@@ -1,6 +1,8 @@
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
+using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
+using ResourceSystem.API;
 
 namespace ResourceSystem.API.Services;
 
@@ -8,9 +10,9 @@ public class AuthService : IAuthService
 {
     private readonly JwtSettings _jwtSettings;
 
-    public AuthService(JwtSettings jwtSettings)
+    public AuthService(IOptions<JwtSettings> jwtSettings)
     {
-        _jwtSettings = jwtSettings;
+        _jwtSettings = jwtSettings.Value;
     }
 
     public string GenerateToken(string username, string role)

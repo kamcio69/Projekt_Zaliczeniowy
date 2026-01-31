@@ -9,6 +9,6 @@
         Title="ResourceSystem" Height="380" Width="440"
         WindowStartupLocation="CenterScreen">
     <Grid Background="#EEEEEE">
-        <views:LoginView/>
+        <views:LoginView />
     </Grid>
 </Window>
