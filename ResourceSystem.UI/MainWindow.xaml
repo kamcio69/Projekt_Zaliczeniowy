@@ -1,12 +1,14 @@
-﻿<Window x:Class="ResourceSystem.UI.MainWindow"
+<Window x:Class="ResourceSystem.UI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ResourceSystem.UI"
+        xmlns:views="clr-namespace:ResourceSystem.UI.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-
+        Title="ResourceSystem" Height="380" Width="440"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#EEEEEE">
+        <views:LoginView/>
     </Grid>
 </Window>
