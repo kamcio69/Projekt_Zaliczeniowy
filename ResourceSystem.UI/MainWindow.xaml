@@ -6,8 +6,9 @@
         xmlns:local="clr-namespace:ResourceSystem.UI"
         xmlns:views="clr-namespace:ResourceSystem.UI.Views"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="ResourceSystem" Height="380" Width="440"
+        WindowStartupLocation="CenterScreen">
+    <Grid Background="#EEEEEE">
         <views:LoginView />
     </Grid>
 </Window>
