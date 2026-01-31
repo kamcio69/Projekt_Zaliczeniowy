@@ -1,1 +1,1 @@
-# Projekt_Zaliczeniowy
+# System Zarządzania Zasobami
